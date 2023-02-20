@@ -1,0 +1,10 @@
+
+#include<chrono>
+using namespace std::chrono;
+ auto start_time = high_resolution_clock::now();
+
+auto end_time = high_resolution_clock::now();
+//auto time = duration_cast<miliseconds>(end_time - start_time);
+duration<double> time =(end_time - start_time);
+
+cout<< "Time : "<<time.count()<<endl;
